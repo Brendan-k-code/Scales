@@ -12,7 +12,10 @@ void draw() {
   }    
 }
 void scale(int x, int y) {
-  fill(1,255,3);
+  Random rand = new Random();
+  fill(20,rand.nextInt(255),20);
+  rect(x-50,y-50,20,20);
   ellipse(x-30,y-30,40,40);
   ellipse(x, y, 60, 60);
-  rect(x,y,20,20);
+
+}
